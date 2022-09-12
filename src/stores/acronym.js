@@ -7,7 +7,7 @@ export const useAcronymStore = defineStore({
         initials: ``
     }),
     getters: {
-
+        
     },
     actions: {
 

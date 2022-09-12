@@ -1,14 +1,18 @@
 <script setup>
 import TheTitle from '@/components/TheTitle.vue';
+import TheAcronym from '@/components/TheAcronym.vue';
 import InputProjectName from '@/components/InputProjectName.vue';
 </script>
 
 <template>
 	<div id="page-content">
-		<div class="title">
+		<div class="title-container">
 			<TheTitle />
 		</div>
-		<InputProjectName />
+		<div class="acronym-container">
+			<TheAcronym />
+			<InputProjectName />
+		</div>
 	</div>
 </template>
 
@@ -20,6 +24,8 @@ import InputProjectName from '@/components/InputProjectName.vue';
 	--color-mid: #393E46;
 	--color-light: #EEEEEE;
 	--color-accent: #00ADB5;
+
+	--transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 
 	font-size: 62.5%;	/* base font size for most 10px now */
 }
@@ -37,7 +43,7 @@ body {
 }
 
 h1 {
-	font-size: 3.2rem;
+	font-size: 4rem;
 }
 
 h2 {
@@ -45,7 +51,7 @@ h2 {
 	font-size: 2.4rem;
 }
 
-input[type="text"] {
+input[type="text"], p {
 	color: var(--color-dark);
 	font-size: 1.6rem;
 }
@@ -56,8 +62,16 @@ input[type="text"] {
 #page-content {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
-	width: 90vw;
+	gap: 3rem;
+	width: min(80%, 800px);
 	margin: auto;
+	margin-block: 2rem;
+}
+
+.acronym-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 </style>

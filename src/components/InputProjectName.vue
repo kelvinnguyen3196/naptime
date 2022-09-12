@@ -13,19 +13,21 @@ const formatData = () => {
         // append first letter of word
         initals = initals.concat(word.charAt(0));
     });
-    acronym.initals = initals;
+    acronym.initals = initals.toLowerCase();
 }
 </script>
 
 <template>
-    <input @input="formatData" v-model="acronym.rawData" type="text">
+    <input @input="formatData" v-model="acronym.rawData" type="text" placeholder="type project name...">
 </template>
 
 <style>
 input[type="text"] {
     all: unset;
     background: var(--color-light);
-    padding: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
     border-radius: 0.5rem;
+    width: 100%;
 }
 </style>
