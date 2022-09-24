@@ -1,17 +1,17 @@
-# naptime
+# 🌙 [naptime](https://naptime-project.netlify.app)
 
-This template should help get you started developing with Vue 3 in Vite.
+**n**aming **a** **p**roject **t**akes **i**ntense **m**ental **e**nergy
 
-## Recommended IDE Setup
+![naptime screenshot](./public/naptime-screenshot.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+It's tough naming a project. I wanted to be able to make my project name acronyms. As you type a name it will take the first character of each word and append to the acronym.
 
-## Customize configuration
+# Table of Contents
+- [Installation](#installation)
+- [Credits](#credits)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
-
+# Installation
 ```sh
 npm install
 ```
@@ -27,3 +27,8 @@ npm run dev
 ```sh
 npm run build
 ```
+- deploy `dist/` folder
+
+# Credits
+### Built With
+- [Vue.js](https://vuejs.org)
